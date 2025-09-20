@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Neon Road: Cyberpunk Drive</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <canvas id="gameCanvas"></canvas>
-  <div id="overlay">
-      <h1>Cyberpunk Neon Drive</h1>
-      <p>Tap or drag to steer.<br/>Survive as long as you can!</p>
-      <button id="startBtn">Start</button>
-      <div id="score">Score: 0</div>
-  </div>
-  <script src="game.js"></script>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Neon Infinite Roads</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="menu">
+      <h1>Neon Infinite Roads</h1>
+      <button onclick="selectVehicle('car')">Drive Car</button>
+      <button onclick="selectVehicle('bike')">Ride Bike</button>
+    </div>
+    <canvas id="bg"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
+
